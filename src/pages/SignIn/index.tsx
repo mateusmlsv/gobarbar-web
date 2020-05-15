@@ -14,7 +14,7 @@ import logoImg from '../../assets/logo.svg';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 
-import { Container, Content, AnimationContainer , Background } from './styles';
+import { Container, Content, AnimationContainer, Background } from './styles';
 
 interface SignInFormData {
   email: string;
@@ -61,7 +61,7 @@ const SignIn: React.FC = () => {
         addToast({
           type: 'error',
           title: 'Erro na autenticação',
-          description: 'Ocorreu um erro ao fazer login, cheque as credenciais'
+          description: 'Ocorreu um erro ao fazer login, cheque as credenciais',
         });
       }
     },
@@ -70,7 +70,7 @@ const SignIn: React.FC = () => {
   return (
     <Container>
       <Content>
-       <AnimationContainer>
+        <AnimationContainer>
           <img src={logoImg} alt="GoBaber" />
 
           <Form ref={formRef} onSubmit={handleSubmit}>
@@ -93,7 +93,7 @@ const SignIn: React.FC = () => {
             <FiLogIn />
             Criar conta
           </Link>
-        </AnimationContainer> 
+        </AnimationContainer>
       </Content>
       <Background />
     </Container>

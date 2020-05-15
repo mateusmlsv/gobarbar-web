@@ -38,7 +38,7 @@ export const AnimationContainer = styled.div`
   justify-content: center;
 
   animation: ${appearFromLeft} 1s;
-  
+
   form {
     margin: 80px 0;
     width: 340px;
